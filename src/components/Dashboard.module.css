@@ -1,0 +1,49 @@
+.addwidget{
+margin-right:0px !important;
+margin-top:0px !important;
+margin-bottom:0px !important;
+width:40% !important
+}
+.modal{
+    padding-right:0px !important;
+}
+.rotate{
+    transform : rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+.content{
+    border-radius:0px !important;
+    padding-bottom:1rem;
+    padding-right:2rem;
+    height:100vh;
+}
+.modal-header .btn-close {
+color:white !important;
+}
+/* Base styles for tabs */
+.tab {
+    position: relative;
+}
+
+/* Indicator using ::after pseudo-element */
+.tab::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0; /* Initially hidden */
+    height: 2.5px;
+    background-color: #14147d;
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
+}
+
+/* Styles for active tab */
+.tab.active::after {
+    width: 100%; /* Expand indicator to full width when active */
+}
+
+.tab .active {
+    color: #14147d !important; /* Color for active tab text */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
